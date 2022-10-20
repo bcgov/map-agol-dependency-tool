@@ -1,0 +1,27 @@
+{
+  "name": "arcgis_layer_dependencies",
+  "version": "1.0.0",
+  "description": "Assemble a report containing all the maps on the [Government of BC Maps ArcGIS page](https://governmentofbc.maps.arcgis.com/home/search.html?t=content&q=&focus=maps-webmaps) along with their layers and tags for dependency tracking.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcgov-dss/map-agol-dependency-tool.git"
+  },
+  "keywords": [],
+  "author": "Joe Taylor <joseph.taylor@gov.bc.ca>; Yuhan Freeman <yuhan.freeman@gov.bc.ca>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bcgov-dss/map-agol-dependency-tool/issues"
+  },
+  "homepage": "https://github.com/bcgov-dss/map-agol-dependency-tool/#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "csv-writer": "^1.6.0",
+    "prompts": "^2.4.2",
+    "yaml": "^1.10.2"
+  }
+}

@@ -1,0 +1,98 @@
+- id: 8efe8e6604f64c3997ff5da5f4817fca
+  title: BC Parks Map
+  tags:
+    - GeoBC
+    - BC Parks
+    - BC
+    - Province of British Columbia
+    - Parks
+    - Park Closure
+    - Closure
+  numViews: 926744
+  layers:
+    - id: kml_8547
+      itemId: null
+      title: DriveBC Active Events
+    - id: bcgwpub_6675
+      itemId: 5ade04eb4d7145eab978ba0cff1e6ba8
+      title: National Parks of Canada within British Columbia
+    - id: bcgwpub_3410
+      itemId: 2940b49bcf9a458191a55c21d58f922f
+      title: Fire Centre Boundaries
+    - id: bcgwpub_7533
+      itemId: cdc29473ea7a45439e5b13c382c7b168
+      title: Fire Zones
+    - id: bcgwpub_9587
+      itemId: a86a047606e647558769a0e23613d708
+      title: Emergency Management BC Boundaries
+    - id: bcgwpub_7224
+      itemId: 6b6aa1d4816c486c8df67f0a1a773a3c
+      title: Tourism Regions
+    - id: bcgwpub_1483
+      itemId: bb7f0c48789943fbb6e3a0afb9fd4e01
+      title: Regional Districts
+    - id: bcgwpub_5088
+      itemId: f4c9940b58e645f29192a62fe34bf7eb
+      title: Natural Resource (NR) Areas
+    - id: bcgwpub_8894
+      itemId: cf3b0d37dcbf4a748bcfa65966271b47
+      title: Natural Resource (NR) Regions
+    - id: bcgwpub_8447
+      itemId: 5ccd439dd835451aa304468ebdce0427
+      title: Natural Resource (NR) Districts
+    - id: bcgwpub_9906
+      itemId: a833921853fa4298b5ddd5fb6990e2d6
+      title: BC Parks Regional Boundaries
+    - id: bcgwpub_5642
+      itemId: 6759a12f566e4ce5828aa1e2cb73bdf0
+      title: BC Parks Section Boundaries
+    - id: British_Columbia_Conservancy_Areas_5265
+      itemId: 778341071b904a1db0ebb583ab5ab36e
+      title: BC Parks Conservancy Areas
+    - id: British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas_8747
+      itemId: 6773e6a38f2749808679c7c712e2f79b
+      title: BC Parks, Ecological Reserves, and Protected Areas
+    - id: RecSitesReservesInterpForests_DetailsClosures_publicView_2822
+      itemId: d6281a4d6a2044ec865d79cd1007e2f5
+      title: Recreation Sites, Reserves, and Interpretive Forests - Closed (FLNRORD)
+    - id: RecSitesReservesInterpForests_DetailsClosures_publicView_4900
+      itemId: d6281a4d6a2044ec865d79cd1007e2f5
+      title: Recreation Sites, Reserves, and Interpretive Forests - Open (FLNRORD)
+    - id: British_Columbia_Protected_Lands_Access_Restrictions_5416_1541
+      itemId: null
+      title: BC Parks Ecological Reserve Closures and Access Restrictions
+    - id: British_Columbia_Protected_Lands_Access_Restrictions_5416
+      itemId: 3029cd07ff8a4ec7b1e32a1e1f353d36
+      title: BC Parks Closures and Access Restrictions
+    - id: bcgwpub_6071_7351
+      itemId: null
+      title: BC Parks, Ecological Reserves, and Protected Areas - Open (Points)
+    - id: bcgwpub_6071
+      itemId: 2dd03c3d41b842d8b6e199a6c303ce08
+      title: BC Parks Closures and Access Restrictions - (Points)
+    - id: bcgwpub_1337
+      itemId: 2d51c38f4f7f46398d1e625a94e6e663
+      title: HelloBC Visitor Centre
+- id: 7f5595acdc6f4fdfbcaa0e0baee2f2c9
+  title: British Columbia COVID-19 Dashboard - Map
+  tags:
+    - COVID-19
+    - British Columbia
+    - Health
+    - GeoBC
+    - BCCDC
+    - COVID
+  numViews: 23840711
+  layers:
+    - id: 1796cf3190b-layer-7
+      itemId: 8a6e9a3e399141e9be799982066edc44
+      title: COVID-19 Cumulative Rate by B.C. Health Service Delivery Area
+    - id: 1796cf33fe2-layer-8
+      itemId: 4519b7e4d93a4c05898b1f5cca31614e
+      title: COVID-19 Average Daily Rate by B.C. Health Service Delivery Area
+    - id: HA_Labels_3284
+      itemId: b0bf00afcdfb45119e0b94132ae80a5a
+      title: B.C. Health Authority Labels
+    - id: COVID19_Cases_by_BC_Health_Authority_4486
+      itemId: f7d1318260b14ac2b334e81e55ee5c9e
+      title: COVID-19 Cases by B.C. Health Authority
