@@ -12,7 +12,7 @@ const MAX_EXPECTED_PAGES_OF_WEBMAPS = 1000;
 const TOKEN_EXPIRATION_MINUTES = 360;
 
 let token = undefined;
-
+let timestamp = undefined;
 let username = "";
 let password = "";
 
@@ -206,10 +206,11 @@ async function main() {
     if (response.itemIds) {
         const items = response.itemIds.split(',');
         for (const itemId of items) {
-            if (await isValidItemId(itemId.trim())) {
-                uniqueLayerItemIds.add(itemId);
+            const trimmedItemId = itemId.trim()
+            if (await isValidItemId(trimmedItemId)) {
+                uniqueLayerItemIds.add(trimmedItemId);
             } else {
-                console.warn(`Warning: Could not locate item with ID ${itemId} in ArcGIS Online. Please confirm that the item exists and that you have permission to access it.`);
+                console.warn(`Warning: Could not locate item with ID ${trimmedItemId} in ArcGIS Online. Please confirm that the item exists and that you have permission to access it.`);
             }
         }
 
@@ -233,7 +234,9 @@ async function main() {
         map.layers = await getMapLayers(map.id, true);
     }
 
-    fs.writeFileSync('reports/maps.yml', YAML.stringify(allResults));
+    timestamp = Date.now();
+
+    fs.writeFileSync(`reports/maps_${timestamp}.yml`, YAML.stringify(allResults));
 
     // If uniqueLayerItemIds is empty, no itemIds were specififed on the command line,
     // so we populate it here with layer itemIds from the webmap data.
@@ -263,14 +266,14 @@ async function main() {
 
     createCsvFile(layersAsTopLevel);
 
-    fs.writeFileSync('reports/layers.yml', YAML.stringify(layersAsTopLevel));
+    fs.writeFileSync(`reports/layers_${timestamp}.yml`, YAML.stringify(layersAsTopLevel));
 }
 
 function createCsvFile(layersAsTopLevel) {
     const csvHeader = ["layer_id", "layer_title", "layer_url", "map_item_id", "map_name", "map_views", "map_owner"];
     const writer = csvWriter.createArrayCsvWriter({
         header: csvHeader,
-        path: "reports/dependencies.csv"
+        path: `reports/dependencies_${timestamp}.csv`
     });
     const dependencies = [];
 
